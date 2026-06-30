@@ -1,0 +1,211 @@
+/* =========================================================
+   5. RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 1120px) {
+  .rodape-conteudo {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 980px) {
+  .cabecalho-reserva {
+    display: none;
+  }
+
+  .hero-grade,
+  .estrutura-grade,
+  .destaque-grade,
+  .contato-grade {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-imagens {
+    min-height: 560px;
+  }
+
+  .beneficios-grade,
+  .eventos-grade {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rodape-conteudo {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .barra-aviso p {
+    display: none;
+  }
+
+  .secao {
+    padding: 72px 0;
+  }
+
+  .cabecalho-conteudo {
+    min-height: 74px;
+  }
+
+  .logo img {
+    height: 48px;
+    width: 154px;
+  }
+
+  .botao-menu {
+    display: block;
+    position: relative;
+    z-index: 31;
+  }
+
+  .botao-menu.ativo span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .botao-menu.ativo span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .botao-menu.ativo span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu {
+    align-items: center;
+    background: var(--marfim);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    gap: 28px;
+    inset: 0;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    position: fixed;
+    transform: translateY(-15px);
+    transition: 0.25s ease;
+    z-index: 30;
+  }
+
+  .menu.ativo {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .hero {
+    padding-top: 44px;
+  }
+
+  .hero-grade {
+    gap: 42px;
+  }
+
+  .hero-imagens {
+    display: block;
+    min-height: 0;
+  }
+
+  .hero-foto-principal {
+    aspect-ratio: 0.8 / 1;
+  }
+
+  .hero-foto-secundaria {
+    display: none;
+  }
+
+  .hero-selo {
+    bottom: 18px;
+    height: 152px;
+    left: 18px;
+    width: 152px;
+  }
+
+  .hero-selo strong {
+    font-size: 4.9rem;
+  }
+
+  .cabecalho-secao {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .estrutura-mosaico {
+    grid-template-rows: 210px 210px;
+  }
+
+  .destaque img {
+    height: 360px;
+  }
+
+  .rodape-conteudo,
+  .rodape-final {
+    grid-template-columns: 1fr;
+  }
+
+  .rodape-final {
+    gap: 8px;
+    justify-items: start;
+  }
+
+  .made-by,
+  .voltar-topo {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .grupo-botoes .botao,
+  .contato-acoes .botao {
+    width: 100%;
+  }
+
+  .beneficios-grade,
+  .eventos-grade {
+    grid-template-columns: 1fr;
+  }
+
+  .evento-card {
+    min-height: 360px;
+  }
+
+  .hero-texto h1 {
+    max-width: 360px;
+  }
+
+  .estrutura-mosaico {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .estrutura-mosaico img {
+    height: 270px;
+  }
+
+  .galeria {
+    columns: 1;
+  }
+
+  .whatsapp-flutuante {
+    bottom: 18px;
+    right: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,35 @@
+/* =========================================================
+   FOTOS
+   ========================================================= */
+
+.fotos {
+  background: var(--marfim);
+}
+
+.galeria {
+  columns: 3 250px;
+  column-gap: 16px;
+}
+
+.foto-galeria {
+  background: transparent;
+  border: 0;
+  break-inside: avoid;
+  cursor: zoom-in;
+  display: block;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.foto-galeria img {
+  border-radius: var(--raio);
+  box-shadow: 0 10px 26px rgba(17, 40, 31, 0.08);
+  height: auto;
+  transition: filter 0.22s ease, transform 0.22s ease;
+  width: 100%;
+}
+
+.foto-galeria:hover img {
+  filter: saturate(1.05);
+  transform: translateY(-4px);
+}

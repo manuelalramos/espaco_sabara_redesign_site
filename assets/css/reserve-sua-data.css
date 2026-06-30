@@ -1,0 +1,66 @@
+/* =========================================================
+   RESERVE SUA DATA
+   ========================================================= */
+
+.contato {
+  background:
+    linear-gradient(135deg, rgba(243, 242, 236, 0.96), rgba(237, 242, 235, 0.9)),
+    radial-gradient(circle at 12% 18%, rgba(49, 88, 66, 0.12), transparent 34%);
+}
+
+.contato-grade {
+  align-items: center;
+  display: grid;
+  gap: 54px;
+  grid-template-columns: 0.92fr 1.08fr;
+}
+
+.contato-texto > p:not(.etiqueta) {
+  color: var(--texto-suave);
+  margin: 24px 0 0;
+  max-width: 560px;
+}
+
+.contato-acoes {
+  margin-top: 34px;
+}
+
+.contato-card {
+  display: grid;
+  gap: 0;
+  overflow: hidden;
+  transition: box-shadow 0.24s ease, transform 0.24s ease;
+}
+
+.contato-card:hover {
+  box-shadow: 0 22px 54px rgba(17, 40, 31, 0.14);
+  transform: translateY(-6px);
+}
+
+.contato-card iframe {
+  border: 0;
+  filter: grayscale(0.18) contrast(0.96);
+  height: 290px;
+  transition: filter 0.24s ease;
+  width: 100%;
+}
+
+.contato-card:hover iframe {
+  filter: grayscale(0) contrast(1);
+}
+
+.contato-card div {
+  padding: 28px;
+}
+
+.contato-card strong {
+  display: block;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1.55rem;
+  margin-bottom: 8px;
+}
+
+.contato-card p,
+.contato-card span {
+  color: var(--texto-suave);
+}
