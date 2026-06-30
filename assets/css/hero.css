@@ -1,0 +1,190 @@
+/* =========================================================
+   FESTAS, EVENTOS E TREINAMENTOS
+   ========================================================= */
+
+.hero {
+  background:
+    radial-gradient(circle at 78% 18%, rgba(184, 150, 87, 0.16), transparent 31%),
+    linear-gradient(120deg, rgba(251, 250, 244, 0.96), rgba(243, 242, 236, 0.86));
+  overflow: hidden;
+  padding: 54px 0 38px;
+  position: relative;
+}
+
+.hero::before {
+  background: rgba(184, 150, 87, 0.18);
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  top: 28px;
+  transform: translateX(-50%);
+  width: min(720px, calc(100% - 48px));
+}
+
+.hero-grade {
+  align-items: center;
+  display: grid;
+  gap: 64px;
+  grid-template-columns: 0.9fr 1.1fr;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-texto h1 {
+  max-width: 500px;
+}
+
+.hero-texto p:not(.etiqueta) {
+  color: var(--texto-suave);
+  font-size: 1.02rem;
+  margin: 22px 0 30px;
+  max-width: 520px;
+}
+
+.hero-imagens {
+  display: grid;
+  grid-template-columns: 0.78fr 0.48fr;
+  min-height: 610px;
+  position: relative;
+}
+
+.hero-imagens img {
+  border-radius: var(--raio);
+  box-shadow: var(--sombra);
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero-foto-principal {
+  grid-row: 1;
+}
+
+.hero-foto-secundaria {
+  align-self: end;
+  height: 380px !important;
+  margin-left: -34px;
+  margin-top: 190px;
+}
+
+.hero-selo {
+  align-items: center;
+  background: var(--verde-profundo);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  bottom: 62px;
+  color: var(--branco);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  height: 178px;
+  justify-content: center;
+  left: -48px;
+  position: absolute;
+  text-align: center;
+  width: 178px;
+}
+
+.hero-selo strong {
+  color: var(--ouro);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 5.9rem;
+  font-weight: 700;
+  line-height: 0.9;
+  margin: 2px 0 7px;
+}
+
+.contador {
+  display: block;
+  font: inherit;
+  font-size: inherit !important;
+  line-height: inherit;
+}
+
+.hero-selo > span,
+.hero-selo .selo-prefixo {
+  font-size: 0.72rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero-selo .selo-prefixo {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.beneficios {
+  padding-top: 32px;
+}
+
+.beneficios-grade {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.beneficios article {
+  overflow: hidden;
+  padding: 28px;
+  position: relative;
+  transition: background 0.24s ease, color 0.24s ease, opacity 0.24s ease, transform 0.24s ease;
+}
+
+.beneficios article::after {
+  background: var(--ouro);
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 28px;
+  position: absolute;
+  right: 28px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.24s ease;
+}
+
+.beneficios-grade:hover article {
+  opacity: 0.7;
+  transform: scale(0.985);
+}
+
+.beneficios-grade article:hover {
+  background: var(--verde-profundo);
+  color: var(--branco);
+  opacity: 1;
+  transform: translateY(-8px) scale(1.025);
+}
+
+.beneficios article:hover::after {
+  transform: scaleX(1);
+}
+
+.beneficios i {
+  color: var(--ouro);
+  font-size: 1.55rem;
+  margin-bottom: 20px;
+  transition: color 0.24s ease, transform 0.24s ease;
+}
+
+.beneficios article:hover i {
+  color: var(--ouro);
+  transform: translateY(-2px) scale(1.08);
+}
+
+.beneficios h2 {
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 8px;
+}
+
+.beneficios p {
+  color: var(--texto-suave);
+  font-size: 0.95rem;
+  transition: color 0.24s ease;
+}
+
+.beneficios article:hover p {
+  color: rgba(255, 255, 255, 0.78);
+}
