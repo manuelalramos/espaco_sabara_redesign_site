@@ -1,0 +1,139 @@
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.rodape {
+  background:
+    radial-gradient(circle at 85% 8%, rgba(184, 150, 87, 0.18), transparent 26%),
+    linear-gradient(135deg, #0b1c16, #102c21 48%, #183f2f);
+  color: var(--branco);
+  overflow: hidden;
+  padding-top: 64px;
+  position: relative;
+}
+
+.rodape-conteudo {
+  align-items: start;
+  display: grid;
+  gap: 46px;
+  grid-template-columns: 1.35fr 0.72fr 1.05fr 0.72fr;
+  position: relative;
+  z-index: 1;
+}
+
+.rodape p {
+  color: rgba(255, 255, 255, 0.72);
+  margin-top: 16px;
+  max-width: 390px;
+}
+
+.rodape-coluna {
+  display: grid;
+  gap: 10px;
+}
+
+.rodape-coluna h3 {
+  color: var(--ouro);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.rodape-coluna a,
+.rodape-contato a,
+.rodape-contato p {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.rodape-coluna a {
+  position: relative;
+  width: fit-content;
+}
+
+.rodape-coluna a::after {
+  background: var(--ouro);
+  bottom: -3px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease;
+  width: 100%;
+}
+
+.rodape-coluna a:hover::after {
+  transform: scaleX(1);
+}
+
+.rodape a:hover,
+.social-links a:hover {
+  color: var(--ouro);
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-links a {
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  color: var(--branco);
+  display: inline-flex;
+  height: 42px;
+  justify-content: center;
+  transition: background 0.22s ease, border-color 0.22s ease, color 0.22s ease, transform 0.22s ease;
+  width: 42px;
+}
+
+.social-links a::after {
+  display: none;
+}
+
+.social-links a:hover {
+  background: var(--ouro);
+  border-color: var(--ouro);
+  color: var(--verde-profundo);
+  transform: translateY(-3px);
+}
+
+.rodape-final {
+  border-top: 1px solid rgba(255, 255, 255, 0.13);
+  align-items: center;
+  color: rgba(255, 255, 255, 0.62);
+  display: grid;
+  font-size: 0.82rem;
+  gap: 14px;
+  grid-template-columns: 1fr auto 1fr;
+  margin-top: 46px;
+  padding-bottom: 18px;
+  padding-top: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.made-by {
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+  justify-self: center;
+}
+
+.made-by-logo {
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+}
+
+.voltar-topo {
+  justify-self: end;
+  padding-right: 0;
+}
