@@ -1,0 +1,29 @@
+/* =========================================================
+   EVENTOS OCASIONAIS
+   ========================================================= */
+
+.destaque {
+  background: var(--verde-profundo);
+  color: var(--branco);
+}
+
+.destaque-grade {
+  align-items: center;
+  display: grid;
+  gap: 70px;
+  grid-template-columns: 0.95fr 1.05fr;
+}
+
+.destaque p:not(.etiqueta) {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.04rem;
+  margin-top: 24px;
+  max-width: 580px;
+}
+
+.destaque img {
+  border-radius: var(--raio);
+  height: 470px;
+  object-fit: cover;
+  width: 100%;
+}
