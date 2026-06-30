@@ -1,0 +1,153 @@
+/* =========================================================
+   2. MENU E CABEÇALHO
+   ========================================================= */
+
+.barra-aviso {
+  align-items: center;
+  background: var(--verde-profundo);
+  color: var(--branco);
+  display: flex;
+  font-size: 0.88rem;
+  gap: 22px;
+  justify-content: center;
+  min-height: 42px;
+  padding: 8px 22px;
+  text-align: center;
+}
+
+.barra-aviso a {
+  color: var(--ouro);
+  font-weight: 700;
+  position: relative;
+  transition: color 0.22s ease, transform 0.22s ease;
+}
+
+.barra-aviso a::after {
+  background: currentColor;
+  bottom: -3px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.24s ease;
+  width: 100%;
+}
+
+.barra-aviso a:hover {
+  color: var(--branco);
+  transform: translateY(-1px);
+}
+
+.barra-aviso a:hover::after {
+  transform: scaleX(1);
+}
+
+.cabecalho {
+  background: rgba(251, 250, 245, 0.94);
+  border-bottom: 1px solid rgba(49, 93, 69, 0.12);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.cabecalho-conteudo {
+  align-items: center;
+  display: flex;
+  min-height: 84px;
+}
+
+.logo {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+
+.logo img {
+  height: 58px;
+  object-fit: contain;
+  width: 185px;
+}
+
+.menu {
+  align-items: center;
+  display: flex;
+  gap: clamp(18px, 2.8vw, 38px);
+  margin: 0 auto;
+}
+
+.menu a {
+  color: var(--texto);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.menu a::after {
+  background: var(--ouro);
+  bottom: -8px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.22s ease;
+  width: 100%;
+}
+
+.menu a:hover,
+.menu a.ativo {
+  color: var(--verde);
+}
+
+.menu a:hover::after,
+.menu a.ativo::after {
+  transform: scaleX(1);
+}
+
+.botao-reserva {
+  align-items: center;
+  background: var(--verde-profundo);
+  border: 1px solid var(--verde-profundo);
+  border-radius: 999px;
+  color: var(--branco);
+  display: inline-flex;
+  font-weight: 700;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 22px;
+  box-shadow: 0 10px 22px rgba(17, 40, 31, 0.12);
+  transition: background 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease, color 0.22s ease, transform 0.22s ease;
+  white-space: nowrap;
+}
+
+.botao-reserva:hover {
+  background: var(--ouro);
+  border-color: var(--ouro);
+  box-shadow: 0 14px 28px rgba(17, 40, 31, 0.18);
+  color: var(--verde-profundo);
+  transform: translateY(-3px);
+}
+
+.botao-menu {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  display: none;
+  height: 44px;
+  margin-left: auto;
+  width: 44px;
+}
+
+.botao-menu span {
+  background: var(--verde-profundo);
+  display: block;
+  height: 2px;
+  margin: 6px auto;
+  transition: 0.24s ease;
+  width: 24px;
+}
