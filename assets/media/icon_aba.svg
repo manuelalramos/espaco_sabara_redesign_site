@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.86 140.05">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: Cormorant-Light, Cormorant;
+        font-size: 123.38px;
+        font-weight: 300;
+        letter-spacing: -.04em;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #f6f1e8;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #f6f1e8;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="verde_escuro" data-name="verde escuro">
+    <text class="cls-1" transform="translate(17.35 103.94)"><tspan x="0" y="0">E</tspan></text>
+    <path class="cls-2" d="M27.14,36.75c.4.32-7.66,6.1-7.55,13.48.2,12.72,24.39,13.96,33.39,35.14,3.87,9.12,2.41,16.01,2.06,17.52-.52,2.22-3.12,11.91-12.5,16.3-9.19,4.3-20.19,1.3-26.32-5.23-7.91-8.43-6.12-21-5.59-21.09.48-.08-.32,12.51,7.83,19.22,6.24,5.15,17.27,6.59,22.78,1.42,4.78-4.49,3.82-12.49,3.4-15.66-3.27-24.54-31.03-31.54-28.8-47,1.24-8.54,10.88-14.43,11.31-14.09Z"/>
+    <rect class="cls-3" x="1" y="1" width="89.86" height="138.05" rx="44.93" ry="44.93"/>
+  </g>
+</svg>
