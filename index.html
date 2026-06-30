@@ -16,27 +16,27 @@
     <script src="./assets/js/script.js" defer></script>
   </head>
   <body>
-    <div id="progresso-scroll" aria-hidden="true"></div>
+    <div class="progresso-scroll" id="progresso-scroll" aria-hidden="true"></div>
 
-    <div>
+    <div class="barra-aviso">
       <p>Preços especiais de segunda a quinta</p>
       <a href="#contato">Consulte disponibilidade</a>
     </div>
 
-    <header>
-      <div>
-        <a href="#inicio" aria-label="Página inicial do Espaço Sabará">
+    <header class="cabecalho">
+      <div class="container cabecalho-conteudo">
+        <a class="logo" href="#inicio" aria-label="Página inicial do Espaço Sabará">
           <img src="./assets/media/logo-sabara-fundo.jpg" alt="Logo Espaço Sabará" />
         </a>
 
-        <button id="botao-menu" aria-label="Abrir menu" aria-expanded="false">
+        <button class="botao-menu" id="botao-menu" aria-label="Abrir menu" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
-        <nav id="menu" aria-label="Menu principal">
-          <a href="#inicio">Home</a>
+        <nav class="menu" id="menu" aria-label="Menu principal">
+          <a class="ativo" href="#inicio">Home</a>
           <a href="#estrutura">Estrutura</a>
           <a href="#eventos">Eventos</a>
           <a href="#fotos">Fotos</a>
@@ -44,6 +44,7 @@
         </nav>
 
         <a
+          class="botao-reserva cabecalho-reserva"
           href="https://api.whatsapp.com/send?phone=5511998206844&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
           target="_blank"
           rel="noopener"
@@ -54,78 +55,80 @@
     </header>
 
     <main>
-      <section id="inicio">
-        <div>
-          <div>
-            <p>Festas, eventos e treinamentos</p>
+      <section class="hero" id="inicio">
+        <div class="container hero-grade">
+          <div class="hero-texto">
+            <p class="etiqueta">Festas, eventos e treinamentos</p>
             <h1>Celebre no Espaço Sabará.</h1>
             <p>
               Um salão intimista em São Paulo para reunir <strong>família, amigos ou equipe</strong>
               com <strong>buffet incluso</strong>, clima acolhedor e estrutura pronta para receber bem.
             </p>
-            <div>
-              <a href="#contato">Consultar agenda</a>
-              <a href="#fotos">Ver o espaço</a>
+            <div class="grupo-botoes">
+              <a class="botao" href="#contato">Consultar agenda</a>
+              <a class="botao botao-claro" href="#fotos">Ver o espaço</a>
             </div>
           </div>
 
-          <div aria-label="Fotos do Espaço Sabará">
+          <div class="hero-imagens" aria-label="Fotos do Espaço Sabará">
             <img
+              class="hero-foto-principal"
               src="./assets/media/hero-arraia-sabara.jpeg"
               alt="Mesa decorada para evento no Espaço Sabará"
             />
             <img
+              class="hero-foto-secundaria"
               src="./assets/media/sabara-festa-04.jpeg"
               alt="Decoração de festa no Espaço Sabará"
             />
-            <div>
-              <span>até</span>
-              <strong><span data-numero="80">0</span></strong>
+            <div class="hero-selo">
+              <span class="selo-prefixo">até</span>
+              <strong><span class="contador" data-numero="80">0</span></strong>
               <span>convidados</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section>
-        <div>
+      <section class="secao beneficios">
+        <div class="container beneficios-grade">
           <article>
-            <i></i>
+            <i class="fa-solid fa-utensils"></i>
             <h2>Buffet incluso</h2>
             <p>Pacotes pensados para simplificar sua organização desde o primeiro orçamento.</p>
           </article>
           <article>
-            <i></i>
+            <i class="fa-solid fa-snowflake"></i>
             <h2>Ambiente climatizado</h2>
             <p>Conforto para receber bem em festas de família, empresas e celebrações íntimas.</p>
           </article>
           <article>
-            <i></i>
+            <i class="fa-solid fa-location-dot"></i>
             <h2>Fácil acesso</h2>
             <p>Av. Nossa Senhora do Sabará, 1569, sobreloja, Vila Sofia, São Paulo.</p>
           </article>
         </div>
       </section>
 
-      <section id="estrutura">
-        <div>
-          <div>
-            <p>Estrutura</p>
+      <section class="secao estrutura" id="estrutura">
+        <div class="container estrutura-grade">
+          <div class="estrutura-texto">
+            <p class="etiqueta">Estrutura</p>
             <h2>Pronto para receber, decorar e viver o momento.</h2>
             <p>
               O salão oferece uma base prática para eventos de diferentes formatos. Você conta com
               <strong>mesas, cadeiras, geladeira, micro-ondas e ar-condicionado</strong> para
               receber seus convidados com tranquilidade.
             </p>
-            <ul>
-              <li><i></i><span>Mesas e cadeiras disponíveis</span></li>
-              <li><i></i><span>Geladeira e micro-ondas</span></li>
-              <li><i></i><span>Ar-condicionado no ambiente</span></li>
-              <li><i></i><span>Capacidade para 70 a 80 pessoas</span></li>
+            <ul class="lista-estrutura">
+              <li><i class="fa-solid fa-chair"></i><span>Mesas e cadeiras disponíveis</span></li>
+              <li><i class="fa-solid fa-kitchen-set"></i><span>Geladeira e micro-ondas</span></li>
+              <li><i class="fa-solid fa-fan"></i><span>Ar-condicionado no ambiente</span></li>
+              <li><i class="fa-solid fa-people-group"></i><span>Capacidade para 70 a 80 pessoas</span></li>
             </ul>
           </div>
 
-          <div>
+          <div class="estrutura-mosaico">
             <img src="./assets/media/hero-arraia-sabara.jpeg" alt="Mesa decorada no Espaço Sabará" />
             <img src="./assets/media/sabara-festa-02.jpeg" alt="Detalhe de festa no Espaço Sabará" />
             <img src="./assets/media/sabara-espaco-01.webp" alt="Ambiente interno do Espaço Sabará" />
@@ -133,11 +136,11 @@
         </div>
       </section>
 
-      <section id="eventos">
-        <div>
-          <div>
+      <section class="secao eventos" id="eventos">
+        <div class="container">
+          <div class="cabecalho-secao">
             <div>
-              <p>Eventos</p>
+              <p class="etiqueta">Eventos</p>
               <h2>Para datas pequenas no tamanho e grandes na memória.</h2>
             </div>
             <p>
@@ -145,45 +148,45 @@
             </p>
           </div>
 
-          <div>
-            <article>
+          <div class="eventos-grade">
+            <article class="evento-card">
               <img src="./assets/media/evento-aniversario.webp" alt="Convidados em aniversário" />
-              <div>
+              <div class="evento-card-texto">
                 <h3>Aniversário</h3>
                 <p>Faça do seu aniversário um evento inesquecível, acolhedor e climatizado.</p>
               </div>
             </article>
-            <article>
+            <article class="evento-card">
               <img src="./assets/media/evento-cha-bebe.webp" alt="Decoração de chá de bebê" />
-              <div>
+              <div class="evento-card-texto">
                 <h3>Chá de bebê</h3>
                 <p>Nosso salão é perfeito para comemorar essa chegada com carinho.</p>
               </div>
             </article>
-            <article>
+            <article class="evento-card">
               <img src="./assets/media/evento-cha-revelacao.jpg" alt="Decoração de chá revelação" />
-              <div>
+              <div class="evento-card-texto">
                 <h3>Chá revelação</h3>
                 <p>Um cenário ideal para celebrar a surpresa com família e amigos.</p>
               </div>
             </article>
-            <article>
+            <article class="evento-card">
               <img src="./assets/media/sabara-espaco-02.webp" alt="Espaço preparado para evento corporativo" />
-              <div>
+              <div class="evento-card-texto">
                 <h3>Corporativo</h3>
                 <p>Ambiente profissional para reuniões, treinamentos e confraternizações.</p>
               </div>
             </article>
-            <article>
+            <article class="evento-card">
               <img src="./assets/media/evento-casamento.webp" alt="Noiva segurando buquê" />
-              <div>
+              <div class="evento-card-texto">
                 <h3>Casamento</h3>
                 <p>Formato intimista para viver a celebração com as pessoas certas.</p>
               </div>
             </article>
-            <article>
+            <article class="evento-card">
               <img src="./assets/media/evento-debutante.webp" alt="Festa de debutante" />
-              <div>
+              <div class="evento-card-texto">
                 <h3>Debutante</h3>
                 <p>Ideal para uma celebração marcante, delicada e cheia de presença.</p>
               </div>
@@ -192,10 +195,10 @@
         </div>
       </section>
 
-      <section>
-        <div>
+      <section class="secao destaque">
+        <div class="container destaque-grade">
           <div>
-            <p>Arraiá 2026</p>
+            <p class="etiqueta etiqueta-clara">Arraiá 2026</p>
             <h2>Transforme o clima junino em um evento inesquecível.</h2>
             <p>
               Para empresas, famílias ou grupos de amigos, o Espaço Sabará recebe festas temáticas
@@ -206,61 +209,62 @@
         </div>
       </section>
 
-      <section id="fotos">
-        <div>
-          <div>
+      <section class="secao fotos" id="fotos">
+        <div class="container">
+          <div class="cabecalho-secao cabecalho-central">
             <div>
-              <p>Fotos</p>
+              <p class="etiqueta">Fotos</p>
               <h2>Alguns cenários que já passaram por aqui.</h2>
             </div>
           </div>
 
-          <div>
-            <button type="button">
+          <div class="galeria">
+            <button type="button" class="foto-galeria">
               <img src="./assets/media/hero-arraia-sabara.jpeg" alt="Mesa elegante decorada" />
             </button>
-            <button type="button">
+            <button type="button" class="foto-galeria">
               <img src="./assets/media/sabara-festa-01.jpeg" alt="Decoração temática em painel" />
             </button>
-            <button type="button">
+            <button type="button" class="foto-galeria">
               <img src="./assets/media/sabara-festa-02.jpeg" alt="Mesa decorada para festa" />
             </button>
-            <button type="button">
+            <button type="button" class="foto-galeria">
               <img src="./assets/media/sabara-festa-03.jpeg" alt="Decoração de arraiá colorida" />
             </button>
-            <button type="button">
+            <button type="button" class="foto-galeria">
               <img src="./assets/media/sabara-festa-04.jpeg" alt="Decoração de festa infantil" />
             </button>
-            <button type="button">
+            <button type="button" class="foto-galeria">
               <img src="./assets/media/sabara-festa-05.jpeg" alt="Mesa de doces decorada" />
             </button>
           </div>
         </div>
       </section>
 
-      <section id="contato">
-        <div>
-          <div>
-            <p>Reserve sua data</p>
+      <section class="secao contato" id="contato">
+        <div class="container contato-grade">
+          <div class="contato-texto">
+            <p class="etiqueta">Reserve sua data</p>
             <h2>Contato para montar o seu evento.</h2>
             <p>
               Chame no WhatsApp, conte o <strong>tipo de evento</strong>, a <strong>data desejada</strong>
               e a quantidade aproximada de <strong>convidados</strong>. A equipe responde com disponibilidade,
               formatos e próximos passos.
             </p>
-            <div>
+            <div class="contato-acoes">
               <a
+                class="botao"
                 href="https://api.whatsapp.com/send?phone=5511998206844&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
                 target="_blank"
                 rel="noopener"
               >
-                <i></i>
+                <i class="fa-brands fa-whatsapp"></i>
                 Enviar mensagem
               </a>
             </div>
           </div>
 
-          <div>
+          <div class="contato-card">
             <iframe
               title="Mapa do Espaço Sabará"
               src="https://www.google.com/maps?q=Espa%C3%A7o%20Sabar%C3%A1%20Av.%20Nossa%20Sra.%20do%20Sabar%C3%A1%201569%20S%C3%A3o%20Paulo&output=embed"
@@ -278,10 +282,10 @@
 
     </main>
 
-    <footer>
-      <div>
-        <div>
-          <a href="#inicio" aria-label="Voltar ao início">
+    <footer class="rodape">
+      <div class="container rodape-conteudo">
+        <div class="rodape-coluna rodape-marca">
+          <a class="logo rodape-logo" href="#inicio" aria-label="Voltar ao início">
             <img src="./assets/media/logo-sabara.png" alt="Logo Espaço Sabará" />
           </a>
           <p>
@@ -290,7 +294,7 @@
           </p>
         </div>
 
-        <nav aria-label="Navegação do rodapé">
+        <nav class="rodape-coluna" aria-label="Navegação do rodapé">
           <h3>Navegação</h3>
           <a href="#inicio">Home</a>
           <a href="#estrutura">Estrutura</a>
@@ -299,7 +303,7 @@
           <a href="#contato">Contato</a>
         </nav>
 
-        <div>
+        <div class="rodape-coluna rodape-contato">
           <h3>Contato</h3>
           <a href="https://www.google.com/maps/place/Espa%C3%A7o+Sabar%C3%A1+-+Festas+-+Eventos+-+Treinamentos/@-23.6689104,-46.6889189,15z" target="_blank" rel="noopener">
             <strong>Endereço</strong> Av. Nossa Sra. do Sabará, 1569 - sobreloja - Vila Sofia
@@ -309,38 +313,38 @@
           </a>
         </div>
 
-        <div>
+        <div class="rodape-coluna rodape-social">
           <h3>Follow us</h3>
-          <div>
+          <div class="social-links">
             <a href="https://api.whatsapp.com/send?phone=5511998206844&text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" aria-label="WhatsApp">
-              <i></i>
+              <i class="fa-brands fa-whatsapp"></i>
             </a>
             <a href="https://www.google.com/maps/place/Espa%C3%A7o+Sabar%C3%A1+-+Festas+-+Eventos+-+Treinamentos/@-23.6689104,-46.6889189,15z" target="_blank" rel="noopener" aria-label="Google Maps">
-              <i></i>
+              <i class="fa-brands fa-google"></i>
             </a>
           </div>
         </div>
       </div>
 
-      <div>
+      <div class="container rodape-final">
         <span>© <span id="ano">2026</span> Espaço Sabará. Todos os direitos reservados.</span>
-        <a href="https://www.instagram.com/manuelalramos/" target="_blank" rel="noopener">
+        <a class="made-by" href="https://www.instagram.com/manuelalramos/" target="_blank" rel="noopener">
           <span>Made by</span>
-          <svg viewBox="0 0 205.06 177.62" role="img" aria-label="Manuela Ramos">
+          <svg class="made-by-logo" viewBox="0 0 205.06 177.62" role="img" aria-label="Manuela Ramos">
             <path d="M109.73,88.68l38.8,14.36c.21.08.21.38,0,.46l-38.8,14.36c-9.63,3.57-17.23,11.16-20.8,20.8l-14.36,38.8c-.08.21-.38.21-.46,0l-14.36-38.8c-3.57-9.63-11.16-17.23-20.8-20.8L.16,103.5c-.21-.08-.21-.38,0-.46l38.8-14.36c9.63-3.57,17.23-11.16,20.8-20.8l14.36-38.8c.08-.21.38-.21.46,0l14.36,38.8c3.57,9.63,11.16,17.23,20.8,20.8Z" />
             <path d="M186.78,27.55l18.26,2.25s.01.02,0,.02l-18.26,2.25c-4.85.6-8.68,4.42-9.27,9.27l-2.25,18.26s-.02.01-.02,0l-2.25-18.26c-.6-4.85-4.42-8.68-9.27-9.27l-18.26-2.25s-.01-.02,0-.02l18.26-2.25c4.85-.6,8.68-4.42,9.27-9.27L175.24.01s.02-.01.02,0l2.25,18.26c.6,4.85,4.42,8.68,9.27,9.27Z" />
           </svg>
         </a>
-        <a href="#inicio">Voltar ao topo</a>
+        <a class="voltar-topo" href="#inicio">Voltar ao topo</a>
       </div>
     </footer>
 
-    <div id="whatsapp-flutuante">
-      <button id="whatsapp-botao" type="button" aria-label="Abrir conversa pelo WhatsApp" aria-expanded="false">
-        <i></i>
+    <div class="whatsapp-flutuante" id="whatsapp-flutuante">
+      <button class="whatsapp-botao" id="whatsapp-botao" type="button" aria-label="Abrir conversa pelo WhatsApp" aria-expanded="false">
+        <i class="fa-brands fa-whatsapp"></i>
       </button>
-      <div id="whatsapp-card" aria-hidden="true">
-        <button id="whatsapp-fechar" type="button" aria-label="Fechar conversa">×</button>
+      <div class="whatsapp-card" id="whatsapp-card" aria-hidden="true">
+        <button class="whatsapp-fechar" id="whatsapp-fechar" type="button" aria-label="Fechar conversa">×</button>
         <span>Vamos conversar?</span>
         <p>Conte sua data, tipo de evento e número de convidados. A equipe responde pelo WhatsApp.</p>
         <a
@@ -353,9 +357,9 @@
       </div>
     </div>
 
-    <div id="lightbox" aria-hidden="true">
-      <button type="button" data-fechar-lightbox aria-label="Fechar foto"></button>
-      <button type="button" data-fechar-lightbox aria-label="Fechar foto">×</button>
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-fundo" type="button" data-fechar-lightbox aria-label="Fechar foto"></button>
+      <button class="lightbox-fechar" type="button" data-fechar-lightbox aria-label="Fechar foto">×</button>
       <img id="lightbox-imagem" src="./assets/media/hero-arraia-sabara.jpeg" alt="" />
     </div>
   </body>
