@@ -125,7 +125,7 @@ const observadorContador = new IntersectionObserver(
 
       const contador = entrada.target;
       const numeroFinal = Number(contador.dataset.numero);
-      const duracao = 2600;
+      const duracao = 3800;
       const inicio = performance.now();
 
       function animarContador(tempoAtual) {

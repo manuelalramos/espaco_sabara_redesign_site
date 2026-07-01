@@ -55,7 +55,7 @@
   width: fit-content;
 }
 
-.rodape-coluna a::after {
+.rodape-coluna a:not(.rodape-logo):not(.rodape-endereco)::after {
   background: var(--ouro);
   bottom: -3px;
   content: "";
@@ -68,12 +68,16 @@
   width: 100%;
 }
 
-.rodape-coluna a:hover::after {
+.rodape-coluna a:hover:not(.rodape-logo):not(.rodape-endereco)::after {
   transform: scaleX(1);
 }
 
 .rodape a:hover,
 .social-links a:hover {
+  color: var(--ouro);
+}
+
+.rodape-endereco:hover strong {
   color: var(--ouro);
 }
 
@@ -125,12 +129,13 @@
   display: inline-flex;
   gap: 8px;
   justify-self: center;
+  line-height: 1;
 }
 
-.made-by-logo {
-  fill: currentColor;
-  height: 24px;
-  width: 24px;
+.made-by img {
+  height: 17px;
+  object-fit: contain;
+  width: 20px;
 }
 
 .voltar-topo {

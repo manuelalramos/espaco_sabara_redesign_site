@@ -88,18 +88,24 @@
 
 .hero-selo strong {
   color: var(--ouro);
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 5.9rem;
-  font-weight: 700;
+  font-family: "DM Sans", Arial, sans-serif;
+  font-feature-settings: "tnum" 1, "lnum" 1;
+  font-size: 5.15rem;
+  font-variant-numeric: tabular-nums lining-nums;
+  font-weight: 800;
+  letter-spacing: 0;
   line-height: 0.9;
   margin: 2px 0 7px;
 }
 
 .contador {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   display: block;
-  font: inherit;
-  font-size: inherit !important;
+  font-size: 4rem;
   line-height: inherit;
+  min-width: 2ch;
+  text-align: center;
+  letter-spacing: 0.1px;
 }
 
 .hero-selo > span,
