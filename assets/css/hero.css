@@ -99,13 +99,12 @@
 }
 
 .contador {
-  font-family: Georgia, 'Times New Roman', Times, serif;
   display: block;
-  font-size: 4rem;
+  font: inherit;
+  font-size: inherit !important;
   line-height: inherit;
   min-width: 2ch;
   text-align: center;
-  letter-spacing: 0.1px;
 }
 
 .hero-selo > span,
